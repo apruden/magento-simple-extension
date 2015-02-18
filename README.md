@@ -1,2 +1,3 @@
-# magento-simple-extension
-magento extension demo
+#Magento extension
+
+Magento simple extension

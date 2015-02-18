@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+	<api2>
+		<resource_groups>
+			<referrals translate="title" module="api2">
+				<title>Catalog</title>
+				<sort_order>10</sort_order>
+			</referrals>
+		</resource_groups>
+		<resources>
+			<referrals translate="title" module="api2">
+				<group>referrals</group>
+				<model>foobar/api2_referral</model>
+				<title>Referrals</title>
+				<sort_order>10</sort_order>
+				<privileges>
+					<admin>
+						<retrieve>1</retrieve>
+					</admin>
+					<customer>
+						<retrieve>1</retrieve>
+					</customer>
+					<guest>
+						<retrieve>1</retrieve>
+					</guest>
+				</privileges>
+				<attributes>
+					<name>Name</name>
+				</attributes>
+				<routes>
+					<route_entity>
+						<route>/referrals/referral/:id</route>
+						<action_type>entity</action_type>
+					</route_entity>
+					<route_collection>
+						<route>/referrals/</route>
+						<action_type>collection</action_type>
+					</route_collection>
+				</routes>
+				<versions>1</versions>
+			</referrals>
+		</resources>
+	</api2>
+</config>
