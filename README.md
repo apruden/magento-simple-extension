@@ -1,3 +1,3 @@
-#Magento extension
+# Magento extension
 
 Magento simple extension
